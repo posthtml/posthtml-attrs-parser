@@ -1,5 +1,6 @@
 # PostHTML Attrs Parser
 [![npm version](https://badge.fury.io/js/posthtml-attrs-parser.svg)](http://badge.fury.io/js/posthtml-attrs-parser)
+[![Build Status](https://travis-ci.org/maltsev/posthtml-attrs-parser.svg?branch=master)](https://travis-ci.org/maltsev/posthtml-attrs-parser)
 
 [PostHTML](https://github.com/posthtml/posthtml) helper that gives a better API to work with tag's attrs.
 
