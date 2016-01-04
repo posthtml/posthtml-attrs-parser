@@ -22,13 +22,13 @@ describe('Parser', () => {
 
 
     it('should parse "style" attr', () => {
-        const tree = getTree('<i style="color: red !important; font-size: 14px; color: blue;"></i>');
+        const tree = getTree('<i style="color: red !important; background: url(http://github.com/logo.png); color: blue;"></i>');
         const attrs = parseAttrs(tree[0].attrs);
         assertAttrs(attrs, {style: {
             'color': ['red !important', 'blue'],
-            'font-size': '14px'
+            'background': 'url(http://github.com/logo.png)'
         }});
-        expect(attrs.compose()).toEqual({style: 'color: red !important; color: blue; font-size: 14px'});
+        expect(attrs.compose()).toEqual({style: 'color: red !important; color: blue; background: url(http://github.com/logo.png)'});
     });
 
 

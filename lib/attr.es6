@@ -13,13 +13,20 @@ export function parseAttr(attrStr, rule) {
 
     var attrDict = {};
     attrValues.forEach(attrKeyValue => {
-        const attrParts = attrKeyValue.split(keyDelimiter);
-        const attrKey = attrParts[0];
+        // We need to split attrKeyValue by keyDelimiter only once.
+        // Therefore we use match() + slice() instead of split()
+
+        const match = attrKeyValue.match(keyDelimiter);
+        if (! match) {
+            return;
+        }
+
+        const attrKey = attrKeyValue.slice(0, match.index);
         if (! attrKey) {
             return;
         }
 
-        const attrValue = attrParts[1] || '';
+        const attrValue = attrKeyValue.slice(match.index + match[0].length) || '';
         var attrCombinedValue = attrDict[attrKey];
 
         if (attrCombinedValue) {
