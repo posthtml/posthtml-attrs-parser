@@ -1,6 +1,6 @@
 {
   "name": "posthtml-attrs-parser",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "PostHTML helper that gives a better API to work with tag's attrs",
   "main": "index.js",
   "author": "Kirill Maltsev <maltsevkirill@gmail.com>",
