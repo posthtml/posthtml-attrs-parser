@@ -1,4 +1,4 @@
-# PostHTML Attrs Parser
+# posthtml-attrs-parser
 [![npm version](https://badge.fury.io/js/posthtml-attrs-parser.svg)](http://badge.fury.io/js/posthtml-attrs-parser)
 [![Build Status](https://travis-ci.org/maltsev/posthtml-attrs-parser.svg?branch=master)](https://travis-ci.org/maltsev/posthtml-attrs-parser)
 
