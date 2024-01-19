@@ -30,6 +30,9 @@
     "posthtml": "^0.16.6",
     "vitest": "^1.2.1"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/posthtml/posthtml-attrs-parser.git"
