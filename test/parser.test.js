@@ -7,7 +7,7 @@ test('should parse string attrs', () => {
   const attrs = parseAttrs(tree[0].attrs);
 
   assertAttrs(attrs, {name: 'user', required: ''});
-  expect(attrs.compose()).toEqual({name: 'user', required: ''});
+  expect(attrs.compose()).toEqual({name: 'user', required: true});
 });
 
 test('should parse "class" attr', () => {
