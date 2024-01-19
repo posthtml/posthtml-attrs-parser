@@ -11,6 +11,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vitest",
+    "release": "np",
     "lint": "eslint lib/*.js",
     "pretest": "npm run lint",
     "test": "vitest run --coverage"
