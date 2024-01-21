@@ -13,8 +13,8 @@
 [npm-version-shield]: https://img.shields.io/npm/v/posthtml-attrs-parser.svg
 [npm-stats]: http://npm-stat.com/charts.html?package=posthtml-attrs-parser
 [npm-stats-shield]: https://img.shields.io/npm/dt/posthtml-attrs-parser.svg
-[github-ci]: https://github.com/cossssmin/posthtml-attrs-parser/actions/workflows/nodejs.yml
-[github-ci-shield]: https://github.com/cossssmin/posthtml-attrs-parser/actions/workflows/nodejs.yml/badge.svg
+[github-ci]: https://github.com/posthtml/posthtml-attrs-parser/actions/workflows/nodejs.yml
+[github-ci-shield]: https://github.com/posthtml/posthtml-attrs-parser/actions/workflows/nodejs.yml/badge.svg
 [license]: ./license
 [license-shield]: https://img.shields.io/npm/l/posthtml-attrs-parser.svg
 
