@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.1] - 2024-01-23
+
+### Fixed
+
+- ensure no-value attribute is a string d0f8b2c
+
 ## [1.0.0] - 2024-01-21
 
 ### New Features
