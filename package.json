@@ -1,6 +1,6 @@
 {
   "name": "posthtml-attrs-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PostHTML helper that provides a better API to work with tag attributes.",
   "main": "lib/index.js",
   "type": "module",
