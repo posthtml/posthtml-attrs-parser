@@ -23,7 +23,7 @@ test('should parse "style" attr', () => {
   const attrs = parseAttrs(tree[0].attrs);
 
   const base64String = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII=';
-  const base64Tree = getTree(`<i style="background: url('${base64String}');"></i>`);
+  const base64Tree = getTree(`<i style="color: red !important; background: url('${base64String}'); color: blue;"></i>`);
   const base64Attrs = parseAttrs(base64Tree[0].attrs);
 
   assertAttrs(attrs, {style: {
@@ -33,9 +33,10 @@ test('should parse "style" attr', () => {
   expect(attrs.compose()).toEqual({style: 'color: red !important; color: blue; background: url(http://github.com/logo.png)'});
 
   assertAttrs(base64Attrs, {style: {
+    'color': ['red !important', 'blue'],
     'background': `url('${base64String}')`
   }});
-  expect(base64Attrs.compose()).toEqual({style: `background: url('${base64String}')`});
+  expect(base64Attrs.compose()).toEqual({style: `color: red !important; color: blue; background: url('${base64String}')`});
 });
 
 test('should parse custom list attrs', () => {
