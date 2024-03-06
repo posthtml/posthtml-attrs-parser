@@ -2,16 +2,25 @@
   "name": "posthtml-attrs-parser",
   "version": "1.0.1",
   "description": "PostHTML helper that provides a better API to work with tag attributes.",
-  "main": "lib/index.js",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "./dist/index.mjs",
   "files": [
-    "lib"
+    "dist"
   ],
   "author": "Kirill Maltsev <maltsevkirill@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "vitest",
     "release": "np",
+    "build": "unbuild",
+    "prepack": "unbuild",
     "lint": "eslint lib/*.js",
     "pretest": "npm run lint",
     "test": "vitest run --coverage"
@@ -29,6 +38,7 @@
     "eslint": "^8.56.0",
     "np": "^10.0.0",
     "posthtml": "^0.16.6",
+    "unbuild": "^2.0.0",
     "vitest": "^1.2.1"
   },
   "engines": {
