@@ -10,7 +10,7 @@
 </div>
 
 [npm]: https://www.npmjs.com/package/posthtml-attrs-parser
-[npm-version-shield]: https://img.shields.io/npm/v/posthtml-attrs-parser/0.1.2
+[npm-version-shield]: https://img.shields.io/npm/v/posthtml-attrs-parser/v0.x
 [npm-stats]: http://npm-stat.com/charts.html?package=posthtml-attrs-parser
 [npm-stats-shield]: https://img.shields.io/npm/dt/posthtml-attrs-parser.svg
 [github-ci]: https://github.com/posthtml/posthtml-attrs-parser/actions/workflows/nodejs.yml
