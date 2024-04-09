@@ -34,8 +34,10 @@
     "attributes"
   ],
   "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@stylistic/eslint-plugin": "^1.7.0",
     "@vitest/coverage-v8": "^1.2.1",
-    "eslint": "^8.56.0",
+    "eslint": "^9.0.0",
     "np": "^10.0.0",
     "posthtml": "^0.16.6",
     "unbuild": "^2.0.0",
