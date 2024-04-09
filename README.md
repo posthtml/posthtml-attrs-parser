@@ -10,7 +10,7 @@
 </div>
 
 [npm]: https://www.npmjs.com/package/posthtml-attrs-parser
-[npm-version-shield]: https://img.shields.io/npm/v/posthtml-attrs-parser.svg
+[npm-version-shield]: https://img.shields.io/npm/v/posthtml-attrs-parser/v0.x
 [npm-stats]: http://npm-stat.com/charts.html?package=posthtml-attrs-parser
 [npm-stats-shield]: https://img.shields.io/npm/dt/posthtml-attrs-parser.svg
 [github-ci]: https://github.com/posthtml/posthtml-attrs-parser/actions/workflows/nodejs.yml
@@ -19,8 +19,6 @@
 [license-shield]: https://img.shields.io/npm/l/posthtml-attrs-parser.svg
 
 A [PostHTML](https://github.com/posthtml/posthtml) helper plugin that provides a better API for working with tag attributes.
-
-This plugin is ESM-only.
 
 ## Usage
 ```js
@@ -44,6 +42,15 @@ posthtml()
   });
 
 // <div class="title title-sub" style="font-size: 15px">Hello!</div>
+```
+
+Both ESM and CJS exports are provided, you can use the plugin in CJS too:
+
+```js
+const posthtml = require('posthtml');
+const parseAttrs = require('posthtml-attrs-parser');
+
+// ...
 ```
 
 ## Attributes
