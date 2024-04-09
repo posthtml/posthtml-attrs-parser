@@ -28,6 +28,21 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - added GitHub Actions build workflow
 - added dependabot for automated dependency updates
 
+## [0.1.2] - 2024-04-09
+
+### New Features
+
+- stop quoting empty/no-value attributes
+
+### Changed
+
+- migrated tests to Vitest
+
+### Added
+
+- added GitHub Actions build workflow
+- added dependabot for automated dependency updates
+
 ## [0.1.1] - 2016-01-05
 
 ### Fixed
