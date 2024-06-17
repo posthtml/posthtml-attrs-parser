@@ -35,7 +35,7 @@
   ],
   "devDependencies": {
     "@vitest/coverage-v8": "^1.4.0",
-    "eslint": "^8.5.7",
+    "eslint": "^9.5.0",
     "np": "^10.0.0",
     "posthtml": "^0.16.6",
     "unbuild": "^2.0.0",
