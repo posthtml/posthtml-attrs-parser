@@ -59,11 +59,11 @@ function stringifyAttr(attr, rule) {
     return attr.join(delimiter);
   }
   const attrKeyValues = [];
-  for (let attrName of Object.keys(attr)) {
-    let attrCombinedValue = Array.isArray(attr[attrName]) ? attr[attrName] : [attr[attrName]];
-    attrCombinedValue.forEach((attrValue) => {
+  for (const attrName of Object.keys(attr)) {
+    const attrCombinedValue = Array.isArray(attr[attrName]) ? attr[attrName] : [attr[attrName]];
+    for (const attrValue of attrCombinedValue) {
       attrKeyValues.push(attrName + keyDelimiter + attrValue);
-    });
+    }
   }
   return attrKeyValues.join(delimiter);
 }
@@ -71,7 +71,7 @@ function stringifyAttr(attr, rule) {
 function parseAttrs(posthtmlAttrs = {}, options = {}) {
   const parseRules = Object.assign({}, defaultParseRules, options.rules || {});
   const attrs = {};
-  for (let attrName of Object.keys(posthtmlAttrs)) {
+  for (const attrName of Object.keys(posthtmlAttrs)) {
     attrs[attrName] = parseAttr(posthtmlAttrs[attrName], parseRules[attrName]);
   }
   attrs.compose = function() {
@@ -82,7 +82,7 @@ function parseAttrs(posthtmlAttrs = {}, options = {}) {
 function composeAttrs(attrs, parseRules) {
   delete attrs.compose;
   const posthtmlAttrs = {};
-  for (let attrName of Object.keys(attrs)) {
+  for (const attrName of Object.keys(attrs)) {
     posthtmlAttrs[attrName] = stringifyAttr(attrs[attrName], parseRules[attrName]) || true;
   }
   return posthtmlAttrs;
