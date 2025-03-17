@@ -38,7 +38,7 @@
     "@vitest/coverage-v8": "^2.0.1",
     "posthtml": "^0.16.6",
     "unbuild": "^3.0.1",
-    "vitest": "^2.0.1"
+    "vitest": "^3.0.9"
   },
   "engines": {
     "node": ">=16.0.0"
