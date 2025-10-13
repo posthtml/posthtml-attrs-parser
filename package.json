@@ -34,7 +34,7 @@
     "attributes"
   ],
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.2.6",
     "@vitest/coverage-v8": "^2.0.1",
     "posthtml": "^0.16.6",
     "unbuild": "^3.0.1",
